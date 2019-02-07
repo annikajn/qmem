@@ -118,7 +118,7 @@ TODO: Write history
 ## Contributors
 
 - [Adam Gough](https://github.com/gough)
-- [Annika Nicol](https://github.com/getitdon)
+- [Annika Nicol](https://github.com/annikajn)
 - [Joshua Horner](https://github.com/WalkingInCircles)
 - [Lucy Rowland](https://github.com/lucyrowland)
 - [Sasha Sreckovic](https://github.com/ssreckovic)

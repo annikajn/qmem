@@ -34,7 +34,9 @@ class UsersTableSeeder extends Seeder
             ['14ajn', 'Annika'], // Annika
             ['12jeh6', 'Josh'], // Josh
             ['13lr31', 'Lucy'], // Lucy
-            ['14ss36', 'Sasha'] // Sahsa
+            ['14ss36', 'Sasha'], // Sahsa
+            ['0ajn1', 'Alex'], //Alex
+            ['9dav3', 'Derek'] //Derek
         ];
 
         foreach ($infos as $info) {
