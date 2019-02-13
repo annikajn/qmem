@@ -38,10 +38,10 @@ class AuthNetid
                 // user is NOT already authenticated, continue with authentication process
                 
                 // check if netid header is present
-                if (isset($_SERVER['HTTP_QUEENSU_NETID']))
+                if (isset($_SERVER['HTTP_SU_NETID']))
                 {
                     // header is present, lookup user id by searching for netid
-                    $netid = $_SERVER['HTTP_QUEENSU_NETID'];
+                    $netid = $_SERVER['HTTP_SU_NETID'];
                     $user = User::where('netid', $netid)->first();
 
                     if ($user !== null)                    
@@ -53,12 +53,12 @@ class AuthNetid
                             Auth::loginUsingId($user->id);
 
                             // check if additional user information is present in server headers
-                            if (isset($_SERVER['HTTP_COMMON_NAME']) && isset($_SERVER['HTTP_QUEENSU_MAIL']))
+                            if (isset($_SERVER['HTTP_COMMON_NAME']) && isset($_SERVER['HTTP_SU_MAIL']))
                             {
                                 // additional information is available, so update our records
                                 $user->update([
                                     'name' => $_SERVER['HTTP_COMMON_NAME'],
-                                    'email' => $_SERVER['HTTP_QUEENSU_MAIL']
+                                    'email' => $_SERVER['HTTP_SU_MAIL']
                                 ]);                         
                             }                    
                             
