@@ -13,7 +13,7 @@ class AssetsTableSeeder extends Seeder
      */
     public function run()
     {
-        if (config('app.env') != 'production')
+        if (config('app.env') != 'production'||true)
         {
             $faker = Faker::create();
             for ($i = 1; $i < 123; $i++) {

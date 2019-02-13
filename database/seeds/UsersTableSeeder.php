@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        if (config('app.env') != 'production')
+        if (config('app.env') != 'production'||true)
         {
             // our first user is important, because it will be the one used on local machines
             // (when netid system is unavailable)
@@ -49,7 +49,7 @@ class UsersTableSeeder extends Seeder
             $user->save();
         }
 
-        if (config('app.env') != 'production')
+        if (config('app.env') != 'production'|| true)
         {
             for ($i = 1; $i < 7; $i++) {
                 $user = new User;

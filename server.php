@@ -6,7 +6,6 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-echo $_SERVER['SERVER_NAME'];
 $uri = urldecode(
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
 );
