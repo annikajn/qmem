@@ -19,7 +19,7 @@ class AuthNetid
      */
     public function handle($request, Closure $next)
     {
-        if (config('app.env') == 'local' || $_SERVER['SERVER_PORT'] == 3333)
+        if (config('app.env') == 'local' || $_SERVER['SERVER_PORT'] == '3333')
         {
             // if environment is local, manually login because we can't use netid system
             Auth::loginUsingId(1);
