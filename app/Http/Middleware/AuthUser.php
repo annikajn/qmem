@@ -33,5 +33,5 @@ class AuthUser
             return response('Forbidden (not authenticated)', 403)->header('Content-Type', 'text/plain');
         }
     }
-    }
+    
 }
